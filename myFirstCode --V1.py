@@ -12,3 +12,4 @@ elif (my_randomnum % 3) ==1:
   print (f"You will overcome the challenges if you stay focused.your lucky number is {my_randomnum} ")
 else:
   print (f"You have great opportunities awaiting for you. your lucky number is {my_randomnum} ")
+print ("Have a great day!")
