@@ -1,0 +1,25 @@
+#Game : guess the number - while loop
+
+import random
+import time
+
+my_text = """MadApp : Guess a number
+I will select one number and you have to guess the number.
+Lets see how many tries you need :)
+I am selecting a number ..."""
+print(my_text)
+
+time.sleep(2)
+guess = int(input("Ready! Guess a number :"))
+correct_no=random.randint(1,100)
+guess_cnt=1
+while guess!= correct_no:
+    time.sleep(1)
+    if guess < correct_no:
+        print("guess is low")
+    else:
+        print("guess is  high")
+    guess_cnt+=1
+    guess = int(input("Guess a number :"))
+
+print (f"congrats! correct guess in {guess_cnt} tries!!")
